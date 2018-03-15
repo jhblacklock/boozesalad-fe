@@ -31,7 +31,7 @@ export class HomeApp extends Component {
       <div>
         <Helmet title="Home" />
         <div className="hero-section">
-          <div className="hero-section-text width-50">
+          <div className="hero-section-text width-100">
             <h1>Welcome to BoozeSalad</h1>
             <h5>Find your Enthusiast</h5>
             <div className="padding-1">

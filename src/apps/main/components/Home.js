@@ -12,22 +12,14 @@ export default class Home extends React.PureComponent {
           </div>
           {["Whiskey", "Mezcal", "Wine", "Beer"].map(cat => {
             return (
-              <div className="cell medium-3">
-                <div className="image-hover-wrapper" key={cat}>
+              <a href="#" className="cell medium-3" key={cat}>
+                <span className="image-hover-wrapper">
                   <span className="image-hover-wrapper-banner">
                     {cat} Tastings
                   </span>
-                  <a href="#">
-                    <img src="https://images.pexels.com/photos/163704/bike-old-wheel-two-wheeled-vehicle-163704.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb" />
-                    <span className="image-hover-wrapper-reveal">
-                      <p>
-                        Check it<br />
-                        <i className="fa fa-link" aria-hidden="true" />
-                      </p>
-                    </span>
-                  </a>
-                </div>
-              </div>
+                  <img src="https://images.pexels.com/photos/163704/bike-old-wheel-two-wheeled-vehicle-163704.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb" />
+                </span>
+              </a>
             );
           })}
         </div>
