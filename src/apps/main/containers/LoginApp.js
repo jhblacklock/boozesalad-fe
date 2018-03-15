@@ -4,12 +4,9 @@ import React, { Component } from "react";
 import { bindActionCreators } from "redux";
 import { connect } from "react-redux";
 import Helmet from "react-helmet";
-import Home from "../components/Home";
-import "../assets/css/main.scss";
+import Login from "../components/Login";
 
-import { Icon } from "react-foundation";
-
-export class HomeApp extends Component {
+export class LoginApp extends Component {
   /**
    * Called by ReactRouter before loading the container. Called prior to the
    * React life cycle so doesn't have access to component's props or state.
@@ -29,31 +26,8 @@ export class HomeApp extends Component {
   render() {
     return (
       <div>
-        <Helmet title="Home" />
-        <div className="hero-section">
-          <div className="hero-section-text width-50">
-            <h1>Welcome to BoozeSalad</h1>
-            <h5>Find your Enthusiast</h5>
-            <div className="padding-1">
-              <form>
-                <div className="input-group">
-                  <input
-                    className="input-group-field"
-                    type="text"
-                    placeholder="Whiskey, Mezcal, Beer, Wine Tastings..."
-                  />
-                  <div className="input-group-button">
-                    <input type="submit" className="button" value="Submit" />
-                  </div>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-
-        <div className="grid-container">
-          <Home />
-        </div>
+        <Helmet title="Login" />
+        <Login />
       </div>
     );
   }
@@ -70,4 +44,4 @@ export default connect(
       },
       dispatch,
     ),
-)(HomeApp);
+)(Login);
