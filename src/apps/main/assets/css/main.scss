@@ -1,5 +1,43 @@
 @import "~foundation-sites/scss/foundation";
+@import "./utilities/borders.scss";
 @include foundation-everything(true, $prototype: true);
+
+$lightest-gray: lighten($light-gray, 7%);
+$foundation-gray-palette: (
+  lightest: $lightest-gray,
+  light: $light-gray,
+  medium: $medium-gray,
+  dark: $dark-gray,
+  black: $black,
+  white: $white,
+);
+
+@each $name, $color in $foundation-palette {
+  .color-#{$name} { color: $color !important; }
+}
+
+@each $name, $color in $foundation-palette {
+  .background-#{$name} { background-color: $color !important; }
+}
+
+@each $name, $color in $foundation-gray-palette {
+  .color-#{$name} { color: $color !important; }
+}
+
+@each $name, $color in $foundation-gray-palette {
+  .background-#{$name} { background-color: $color !important; }
+}
+
+.circle {
+  border-radius: 50%;
+}
+
+.container-hover {
+  transition: background .25s ease-in-out;
+  &:hover {
+    background-color: $lightest-gray;
+  }
+}
 
 .hero-section {
   // background: url('https://static.pexels.com/photos/248064/pexels-photo-248064.jpeg') 50% no-repeat;
@@ -17,6 +55,12 @@
 
 .image-hover-wrapper {
   position: relative;
+  &:hover {
+    img {
+      transition: opacity .25s ease-in-out;
+      opacity: 0.85;
+    }
+  }
   a {
     display: inline-block;
     img {

@@ -28,9 +28,9 @@ export default class Home extends React.PureComponent {
           <div className="width-100 text-center">
             <h1 className="separator-center">Testimonials</h1>
           </div>
-          {[1, 2].map(() => {
+          {[1, 2].map(index => {
             return (
-              <div className="grid-x grid-padding-x">
+              <div className="grid-x grid-padding-x" key={index}>
                 <div className="cell medium-6">
                   <div className="testimonial">
                     <img

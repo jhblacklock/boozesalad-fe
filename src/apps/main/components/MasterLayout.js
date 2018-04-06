@@ -25,7 +25,7 @@ export default class MasterLayout extends React.PureComponent {
         <Helmet {...config.head} />
         <TopBar>
           <TopBarTitle>
-            <Link to="/">BoozeSalad</Link>
+            <Link to="/">Taste Buddha</Link>
           </TopBarTitle>
           <TopBarRight>
             <Menu>
@@ -34,6 +34,9 @@ export default class MasterLayout extends React.PureComponent {
               </MenuItem>
               <MenuItem>
                 <Link to="/join">Sign Up</Link>
+              </MenuItem>
+              <MenuItem>
+                <Link to="/portfolio">Dashboard</Link>
               </MenuItem>
             </Menu>
           </TopBarRight>

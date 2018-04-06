@@ -4,10 +4,16 @@ import React, { Component } from "react";
 import { bindActionCreators } from "redux";
 import { connect } from "react-redux";
 import Helmet from "react-helmet";
-import Home from "../components/Home";
-import "../assets/css/main.scss";
+import NoMatchApp from "./NoMatchApp";
 
-export class HomeApp extends Component {
+type Props = {
+  params: {
+    userId: number,
+  },
+};
+
+export class UserApp extends Component {
+  props: Props;
   /**
    * Called by ReactRouter before loading the container. Called prior to the
    * React life cycle so doesn't have access to component's props or state.
@@ -25,32 +31,16 @@ export class HomeApp extends Component {
   static gsBeforeRoute(/* {dispatch}, renderProps, query, serverProps */) {}
 
   render() {
+    const { params: { userId } } = this.props;
+    if (userId !== "william") {
+      return (
+        <NoMatchApp message="Sorry, the user you requested is not available." />
+      );
+    }
     return (
       <div>
-        <Helmet title="Home" />
-        <div className="hero-section">
-          <div className="hero-section-text width-100">
-            <h1>Welcome to Taste Buddha</h1>
-            <h5>Find your Enthusiast</h5>
-            <div className="padding-1">
-              <form>
-                <div className="input-group">
-                  <input
-                    className="input-group-field"
-                    type="text"
-                    placeholder="Whiskey, Mezcal, Beer, Wine Tastings..."
-                  />
-                  <div className="input-group-button">
-                    <input type="submit" className="button" value="Submit" />
-                  </div>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-        <div className="grid-container">
-          <Home />
-        </div>
+        <Helmet title="UserApp" />
+        UserApp
       </div>
     );
   }
@@ -67,4 +57,4 @@ export default connect(
       },
       dispatch,
     ),
-)(HomeApp);
+)(UserApp);

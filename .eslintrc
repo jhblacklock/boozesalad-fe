@@ -1,7 +1,7 @@
 {
   "parser": "babel-eslint",
+  "root": true,
   "rules": {
-    "flowtype/define-flow-type": 1,
     "comma-dangle": 0,
     "no-cond-assign": [2, "always"],
     "no-extra-boolean-cast": 0,
@@ -32,7 +32,9 @@
 
     "react/display-name": 0,
     "react/jsx-wrap-multilines": 2,
-    "react/prop-types": [2, {"ignore": ["children"]}]
+    "react/prop-types": [2, {"ignore": ["children"]}],
+    "flowtype/define-flow-type": 2,
+    "flowtype/use-flow-type": 2
   },
   "env": {
     "es6": true,
@@ -48,5 +50,10 @@
   "plugins": [
     "react",
     "flowtype"
-  ]
+  ],
+  "settings": {
+    "flowtype": {
+      "onlyFilesWithFlowAnnotation": false
+    }
+  }
 }

@@ -1,0 +1,11 @@
+@import "~react-datepicker/dist/react-datepicker.css";
+
+form.multi-form {
+  padding: 20px;
+  max-width: 1000px;
+}
+
+.react-datepicker-wrapper,
+.react-datepicker-wrapper .react-datepicker__input-container  {
+  width: 100%;
+}

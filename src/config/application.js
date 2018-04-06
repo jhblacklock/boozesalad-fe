@@ -35,8 +35,8 @@ const LOCAL_API_URL = "http://localhost:3000";
 const API_PREFIX = "/db";
 
 const headContent: HeadContent = {
-  title: "BoozeSalad",
-  titleTemplate: "%s | BoozeSalad",
+  title: "Taste Buddha",
+  titleTemplate: "%s | Taste Buddha",
   meta: [
     {
       name: "description",

@@ -4,10 +4,10 @@ import React, { Component } from "react";
 import { bindActionCreators } from "redux";
 import { connect } from "react-redux";
 import Helmet from "react-helmet";
-import Home from "../components/Home";
-import "../assets/css/main.scss";
+import PortfolioStart from "../../components/portfolio/PortfolioStart";
+import Sidebar from "../../components/portfolio/Sidebar";
 
-export class HomeApp extends Component {
+export class PortfolioStartApp extends Component {
   /**
    * Called by ReactRouter before loading the container. Called prior to the
    * React life cycle so doesn't have access to component's props or state.
@@ -26,30 +26,15 @@ export class HomeApp extends Component {
 
   render() {
     return (
-      <div>
-        <Helmet title="Home" />
-        <div className="hero-section">
-          <div className="hero-section-text width-100">
-            <h1>Welcome to Taste Buddha</h1>
-            <h5>Find your Enthusiast</h5>
-            <div className="padding-1">
-              <form>
-                <div className="input-group">
-                  <input
-                    className="input-group-field"
-                    type="text"
-                    placeholder="Whiskey, Mezcal, Beer, Wine Tastings..."
-                  />
-                  <div className="input-group-button">
-                    <input type="submit" className="button" value="Submit" />
-                  </div>
-                </div>
-              </form>
-            </div>
+      <div className="grid-container padding-vertical-3">
+        <Helmet title="Portfolio" />
+        <div className="grid-x grid-margin-x">
+          <div className="cell large-3">
+            <Sidebar />
           </div>
-        </div>
-        <div className="grid-container">
-          <Home />
+          <div className="cell large-9">
+            <PortfolioStart />
+          </div>
         </div>
       </div>
     );
@@ -67,4 +52,4 @@ export default connect(
       },
       dispatch,
     ),
-)(HomeApp);
+)(PortfolioStartApp);

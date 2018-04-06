@@ -2,6 +2,7 @@
 import React from "react";
 import "./Login.scss";
 import { Icon } from "react-foundation";
+import { Link } from "react-router";
 
 export default class Login extends React.PureComponent {
   render() {
@@ -20,7 +21,9 @@ export default class Login extends React.PureComponent {
           <input id="show-password" type="checkbox" />
           <label htmlFor="show-password">Show password</label>
           <p>
-            <input type="submit" className="button expanded" value="Log in" />
+            <Link to="/join/sign-up" className="button expanded">
+              Click to login
+            </Link>
           </p>
           <p className="text-center">
             <a href="#">Forgot your password?</a>
