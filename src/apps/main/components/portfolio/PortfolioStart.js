@@ -4,11 +4,12 @@ import { Link } from "react-router";
 import { Icon } from "react-foundation";
 import PortfolioHeader from "./PortfolioHeader";
 import PortfolioSection from "./PortfolioSection";
+import Box from "./Box";
 
 export default class PortfolioStart extends React.PureComponent {
   render() {
     return (
-      <div>
+      <Box>
         <PortfolioHeader>
           <h4 className="cell auto">Portfolio</h4>
           <Link to="/william" className="cell small-3 text-right">
@@ -17,7 +18,7 @@ export default class PortfolioStart extends React.PureComponent {
         </PortfolioHeader>
         <div className="padding-1">
           <section className="border-bottom padding-vertical-1">
-            <h1>Hello, William.</h1>
+            <h2>Hello, William.</h2>
             <p>
               Ready to maximize your gigs? Below is a breakdown of the Portfolio
               elements which have the biggest impact on whether event planners
@@ -208,7 +209,7 @@ export default class PortfolioStart extends React.PureComponent {
             </Link>
           </section>
         </div>
-      </div>
+      </Box>
     );
   }
 }

@@ -11,9 +11,7 @@ export default class PortfolioSection extends React.PureComponent {
     const { children } = this.props;
 
     return (
-      <section className="border-bottom padding-vertical-1 grid-x grid-margin-x">
-        {children}
-      </section>
+      <section className="border-bottom padding-1 grid-x">{children}</section>
     );
   }
 }

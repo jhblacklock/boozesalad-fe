@@ -6,6 +6,7 @@ import { connect } from "react-redux";
 import Helmet from "react-helmet";
 import Portfolio from "../../components/portfolio/Portfolio";
 import UserCard from "../../components/portfolio/UserCard";
+import NewsCard from "../../components/portfolio/NewsCard";
 
 export class PortfolioApp extends Component {
   /**
@@ -31,6 +32,7 @@ export class PortfolioApp extends Component {
         <div className="grid-x grid-margin-x">
           <div className="cell medium-6 large-3">
             <UserCard />
+            <NewsCard />
           </div>
           <div className="cell medium-6 large-9">
             <Portfolio />
