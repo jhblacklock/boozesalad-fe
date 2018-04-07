@@ -36,7 +36,10 @@ export default class PortfolioStart extends React.PureComponent {
             <div className="cell auto">
               <div className="grid-x">
                 <b className="cell auto">Profile Photo</b>
-                <Link to="#" className="cell medium-3 text-right">
+                <Link
+                  to="/portfolio/photos/profile-photo"
+                  className="cell medium-3 text-right"
+                >
                   Edit
                 </Link>
               </div>
@@ -62,7 +65,10 @@ export default class PortfolioStart extends React.PureComponent {
             <div className="cell auto">
               <div className="grid-x">
                 <b className="cell auto">Overview Text</b>
-                <Link to="#" className="cell medium-3 text-right">
+                <Link
+                  to="/portfolio/basic-info/overview"
+                  className="cell medium-3 text-right"
+                >
                   Edit
                 </Link>
               </div>
@@ -87,7 +93,10 @@ export default class PortfolioStart extends React.PureComponent {
             <div className="cell auto">
               <div className="grid-x">
                 <b className="cell auto">Tasting Menus</b>
-                <Link to="#" className="cell medium-3 text-right">
+                <Link
+                  to="/portfolio/menus"
+                  className="cell medium-3 text-right"
+                >
                   Add
                 </Link>
               </div>
@@ -112,7 +121,10 @@ export default class PortfolioStart extends React.PureComponent {
             <div className="cell auto">
               <div className="grid-x">
                 <b className="cell auto">Videos</b>
-                <Link to="#" className="cell medium-3 text-right">
+                <Link
+                  to="/portfolio/videos"
+                  className="cell medium-3 text-right"
+                >
                   Add
                 </Link>
               </div>
@@ -137,7 +149,10 @@ export default class PortfolioStart extends React.PureComponent {
             <div className="cell auto">
               <div className="grid-x">
                 <b className="cell auto">Additional categories</b>
-                <Link to="#" className="cell medium-3 text-right">
+                <Link
+                  to="/portfolio/categories/additional"
+                  className="cell medium-3 text-right"
+                >
                   Add
                 </Link>
               </div>
@@ -163,7 +178,10 @@ export default class PortfolioStart extends React.PureComponent {
             <div className="cell auto">
               <div className="grid-x">
                 <b className="cell auto">Photo Gallery</b>
-                <Link to="#" className="cell medium-3 text-right">
+                <Link
+                  to="/portfolio/photos"
+                  className="cell medium-3 text-right"
+                >
                   Add
                 </Link>
               </div>
@@ -188,7 +206,10 @@ export default class PortfolioStart extends React.PureComponent {
             <div className="cell auto">
               <div className="grid-x">
                 <b className="cell auto">Verified Reviews</b>
-                <Link to="#" className="cell medium-3 text-right">
+                <Link
+                  to="/portfolio/reviews/request"
+                  className="cell medium-3 text-right"
+                >
                   Request Reviews
                 </Link>
               </div>

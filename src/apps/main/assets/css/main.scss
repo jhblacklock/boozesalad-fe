@@ -2,6 +2,7 @@ $topbar-background: #fff;
 
 @import "~foundation-sites/scss/foundation";
 @import "./utilities/borders.scss";
+@import "./utilities/bubbles.scss";
 @import "~react-big-calendar/lib/css/react-big-calendar.css";
 @include foundation-everything(true, $prototype: true);
 
@@ -43,13 +44,12 @@ $foundation-gray-palette: (
 }
 
 .hero-section {
-  // background: url('https://static.pexels.com/photos/248064/pexels-photo-248064.jpeg') 50% no-repeat;
+  background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
   height: 30vh;
-  text-align: center;
+  min-height: 25rem;
   display: flex;
-  align-items: center;
-  justify-content: center;
 
   .hero-section-text {
     max-width: 70rem;

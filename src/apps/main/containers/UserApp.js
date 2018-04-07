@@ -5,6 +5,7 @@ import { bindActionCreators } from "redux";
 import { connect } from "react-redux";
 import Helmet from "react-helmet";
 import NoMatchApp from "./NoMatchApp";
+import User from "../components/User";
 
 type Props = {
   params: {
@@ -33,14 +34,12 @@ export class UserApp extends Component {
   render() {
     const { params: { userId } } = this.props;
     if (userId !== "william") {
-      return (
-        <NoMatchApp message="Sorry, the user you requested is not available." />
-      );
+      return <NoMatchApp />;
     }
     return (
       <div>
         <Helmet title="UserApp" />
-        UserApp
+        <User />
       </div>
     );
   }
