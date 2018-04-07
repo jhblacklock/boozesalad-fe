@@ -194,7 +194,7 @@ export default class PortfolioStart extends React.PureComponent {
               </div>
               <p className="width-75">
                 Verified reviews are submitted by buyers who book through
-                GigSalad. Reviews definitely help event planners learn about
+                Taste Buddha. Reviews definitely help event planners learn about
                 your work.
               </p>
               <p>

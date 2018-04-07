@@ -1,5 +1,8 @@
+$topbar-background: #fff;
+
 @import "~foundation-sites/scss/foundation";
 @import "./utilities/borders.scss";
+@import "~react-big-calendar/lib/css/react-big-calendar.css";
 @include foundation-everything(true, $prototype: true);
 
 $lightest-gray: lighten($light-gray, 7%);

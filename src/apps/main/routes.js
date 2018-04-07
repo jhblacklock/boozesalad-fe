@@ -17,6 +17,14 @@ import VerifyApp from "./containers/VerifyApp";
 import UserApp from "./containers/UserApp";
 import PortfolioApp from "./containers/portfolio/PortfolioApp";
 import PortfolioStartApp from "./containers/portfolio/PortfolioStartApp";
+import PortfolioBasicInfoApp from "./containers/portfolio/PortfolioBasicInfoApp";
+import PortfolioCategoriesApp from "./containers/portfolio/PortfolioCategoriesApp";
+import PortfolioMenusApp from "./containers/portfolio/PortfolioMenusApp";
+import PortfolioPhotosApp from "./containers/portfolio/PortfolioPhotosApp";
+import PortfolioVideosApp from "./containers/portfolio/PortfolioVideosApp";
+import PortfolioDetailsApp from "./containers/portfolio/PortfolioDetailsApp";
+import PortfolioBookingTermsApp from "./containers/portfolio/PortfolioBookingTermsApp";
+import PortfolioCalendarApp from "./containers/portfolio/PortfolioCalendarApp";
 
 export default function routes() {
   return (
@@ -39,6 +47,30 @@ export default function routes() {
       <Route path="portfolio">
         <IndexRoute component={PortfolioApp} />
         <Route name="start" component={PortfolioStartApp} path="start" />
+        <Route
+          name="basic-info"
+          component={PortfolioBasicInfoApp}
+          path="basic-info"
+        />
+        <Route
+          name="categories"
+          component={PortfolioCategoriesApp}
+          path="categories"
+        />
+        <Route name="photos" component={PortfolioPhotosApp} path="photos" />
+        <Route name="videos" component={PortfolioVideosApp} path="videos" />
+        <Route name="details" component={PortfolioDetailsApp} path="details" />
+        <Route
+          name="booking-terms"
+          component={PortfolioBookingTermsApp}
+          path="booking-terms"
+        />
+        <Route name="menus" component={PortfolioMenusApp} path="menus" />
+        <Route
+          name="calendar"
+          component={PortfolioCalendarApp}
+          path="calendar"
+        />
       </Route>
       <Route name="user" component={UserApp} path=":userId" />
       <Route name={ROUTE_NAME_404_NOT_FOUND} path="*" component={NoMatchApp} />

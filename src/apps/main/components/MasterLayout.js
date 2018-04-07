@@ -23,7 +23,7 @@ export default class MasterLayout extends React.PureComponent {
     return (
       <div>
         <Helmet {...config.head} />
-        <TopBar>
+        <TopBar className="border-bottom">
           <TopBarTitle>
             <Link to="/">Taste Buddha</Link>
           </TopBarTitle>

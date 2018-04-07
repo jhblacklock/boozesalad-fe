@@ -16,7 +16,7 @@ export default class Sidebar extends React.PureComponent {
             <Link to="/portfolio/basic-info">Basic Info</Link>
           </li>
           <li>
-            <Link to="/portfolio/catgories">Categories</Link>
+            <Link to="/portfolio/categories">Categories</Link>
           </li>
           <li>
             <Link to="/portfolio/menus">Menus</Link>
@@ -34,7 +34,7 @@ export default class Sidebar extends React.PureComponent {
             <Link to="/portfolio/calendar">Calendar</Link>
           </li>
           <li>
-            <Link to="/portfolio/settings">Settings</Link>
+            <Link to="/portfolio/booking-terms">Booking Terms</Link>
           </li>
         </ul>
       </div>
