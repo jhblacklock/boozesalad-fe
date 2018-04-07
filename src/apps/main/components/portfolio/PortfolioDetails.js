@@ -188,8 +188,11 @@ export default class PortfolioDetails extends React.PureComponent {
               </p>
             </div>
           </PortfolioSection>
-          <section className="grid-x grid-padding-x buttons align-right padding-1">
-            <Link to="portfolio/categories" className="button">
+          <section className="grid-x grid-padding-x buttons align-justify padding-1">
+            <Link to="portfolio/videos" className="button">
+              Back
+            </Link>
+            <Link to="portfolio/calendar" className="button">
               Next
             </Link>
           </section>

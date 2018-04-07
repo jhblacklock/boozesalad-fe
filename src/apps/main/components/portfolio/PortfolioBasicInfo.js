@@ -95,7 +95,10 @@ export default class PortfolioBasicInfo extends React.PureComponent {
               </p>
             </div>
           </PortfolioSection>
-          <section className="grid-x grid-padding-x buttons align-right padding-1">
+          <section className="grid-x grid-padding-x buttons align-justify padding-1">
+            <Link to="portfolio/start" className="button">
+              Back
+            </Link>
             <Link to="portfolio/categories" className="button">
               Next
             </Link>

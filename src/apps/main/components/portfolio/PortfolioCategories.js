@@ -52,8 +52,11 @@ export default class PortfolioCategories extends React.PureComponent {
               <p className="width-75 margin-top-1">I don't have any yet.</p>
             </div>
           </PortfolioSection>
-          <section className="grid-x grid-padding-x buttons align-right padding-1">
-            <Link to="portfolio/categories" className="button">
+          <section className="grid-x grid-padding-x buttons align-justify padding-1">
+            <Link to="portfolio/basic-info" className="button">
+              Back
+            </Link>
+            <Link to="portfolio/menus" className="button">
               Next
             </Link>
           </section>

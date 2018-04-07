@@ -51,8 +51,11 @@ export default class PortfolioPhotos extends React.PureComponent {
               </p>
             </div>
           </PortfolioSection>
-          <section className="grid-x grid-padding-x buttons align-right padding-1">
-            <Link to="portfolio/categories" className="button">
+          <section className="grid-x grid-padding-x buttons align-justify padding-1">
+            <Link to="portfolio/menus" className="button">
+              Back
+            </Link>
+            <Link to="portfolio/videos" className="button">
               Next
             </Link>
           </section>

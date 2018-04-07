@@ -98,9 +98,9 @@ export default class PortfolioBookingTerms extends React.PureComponent {
               </p>
             </div>
           </PortfolioSection>
-          <section className="grid-x grid-padding-x buttons align-right padding-1">
-            <Link to="portfolio/categories" className="button">
-              Next
+          <section className="grid-x grid-padding-x buttons align-left padding-1">
+            <Link to="portfolio/calendar" className="button">
+              Back
             </Link>
           </section>
         </div>

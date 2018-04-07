@@ -77,7 +77,7 @@ export default class Portfolio extends React.PureComponent {
           <PortfolioSection>
             <div className="cell auto text-left padding-horizontal-1">
               <h4>$0.00</h4>
-              <p>Booked Earnings</p>
+              <p>Earnings</p>
             </div>
             <div className="cell auto text-left padding-horizontal-1">
               <h4>0</h4>

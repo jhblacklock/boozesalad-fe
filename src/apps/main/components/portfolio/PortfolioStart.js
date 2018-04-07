@@ -26,7 +26,7 @@ export default class PortfolioStart extends React.PureComponent {
             </p>
           </section>
           <PortfolioSection>
-            <div className="cell medium-2">
+            <div className="cell medium-2 hide-for-small-only">
               <Icon
                 prefix="fi"
                 name="photo"
@@ -52,7 +52,7 @@ export default class PortfolioStart extends React.PureComponent {
             </div>
           </PortfolioSection>
           <PortfolioSection>
-            <div className="cell medium-2">
+            <div className="cell medium-2 hide-for-small-only">
               <Icon
                 prefix="fi"
                 name="page"
@@ -77,7 +77,7 @@ export default class PortfolioStart extends React.PureComponent {
             </div>
           </PortfolioSection>
           <PortfolioSection>
-            <div className="cell medium-2">
+            <div className="cell medium-2 hide-for-small-only">
               <Icon
                 prefix="fi"
                 name="page-multiple"
@@ -102,7 +102,7 @@ export default class PortfolioStart extends React.PureComponent {
             </div>
           </PortfolioSection>
           <PortfolioSection>
-            <div className="cell medium-2">
+            <div className="cell medium-2 hide-for-small-only">
               <Icon
                 prefix="fi"
                 name="video"
@@ -127,7 +127,7 @@ export default class PortfolioStart extends React.PureComponent {
             </div>
           </PortfolioSection>
           <PortfolioSection>
-            <div className="cell medium-2">
+            <div className="cell medium-2 hide-for-small-only">
               <Icon
                 prefix="fi"
                 name="database"
@@ -153,7 +153,7 @@ export default class PortfolioStart extends React.PureComponent {
             </div>
           </PortfolioSection>
           <PortfolioSection>
-            <div className="cell medium-2">
+            <div className="cell medium-2 hide-for-small-only">
               <Icon
                 prefix="fi"
                 name="camera"
@@ -178,7 +178,7 @@ export default class PortfolioStart extends React.PureComponent {
             </div>
           </PortfolioSection>
           <PortfolioSection>
-            <div className="cell medium-2">
+            <div className="cell medium-2 hide-for-small-only">
               <Icon
                 prefix="fi"
                 name="page-edit"
@@ -193,9 +193,9 @@ export default class PortfolioStart extends React.PureComponent {
                 </Link>
               </div>
               <p className="width-75">
-                Verified reviews are submitted by buyers who book through
-                Taste Buddha. Reviews definitely help event planners learn about
-                your work.
+                Verified reviews are submitted by buyers who book through Taste
+                Buddha. Reviews definitely help event planners learn about your
+                work.
               </p>
               <p>
                 <Icon prefix="fi" name="alert" /> You have no verified reviews.

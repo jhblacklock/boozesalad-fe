@@ -1,7 +1,6 @@
 /* @flow */
 import React from "react";
 import { Link } from "react-router";
-import { Icon } from "react-foundation";
 import PortfolioHeader from "./PortfolioHeader";
 import PortfolioSection from "./PortfolioSection";
 import Box from "./Box";
@@ -145,8 +144,11 @@ export default class PortfolioCalendar extends React.PureComponent {
               />
             </div>
           </PortfolioSection>
-          <section className="grid-x grid-padding-x buttons align-right padding-1">
-            <Link to="portfolio/categories" className="button">
+          <section className="grid-x grid-padding-x buttons align-justify padding-1">
+            <Link to="portfolio/details" className="button">
+              Back
+            </Link>
+            <Link to="portfolio/booking-terms" className="button">
               Next
             </Link>
           </section>
