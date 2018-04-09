@@ -27,6 +27,12 @@ export default class MasterLayout extends React.PureComponent {
           <TopBarTitle>
             <Link to="/">Taste Buddha</Link>
           </TopBarTitle>
+          <input
+            className="input-group-field"
+            style={{ maxWidth: 300 }}
+            type="text"
+            placeholder="Whiskey, Mezcal, Beer, Wine Tastings..."
+          />
           <TopBarRight>
             <Menu>
               <MenuItem>

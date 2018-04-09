@@ -28,26 +28,6 @@ export class HomeApp extends Component {
     return (
       <div>
         <Helmet title="Home" />
-        <div className="hero-section text-center align-center">
-          <div className="hero-section-text width-100">
-            <h1>Welcome to Taste Buddha</h1>
-            <h5>Find your Enthusiast</h5>
-            <div className="padding-1">
-              <form>
-                <div className="input-group">
-                  <input
-                    className="input-group-field"
-                    type="text"
-                    placeholder="Whiskey, Mezcal, Beer, Wine Tastings..."
-                  />
-                  <div className="input-group-button">
-                    <input type="submit" className="button" value="Submit" />
-                  </div>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
         <div className="grid-container">
           <Home />
         </div>

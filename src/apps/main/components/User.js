@@ -18,7 +18,6 @@ export default class User extends React.PureComponent {
             <div>
               <img className="rounded" src="https://unsplash.it/202/?random" />
             </div>
-            <button className="button margin-top-1">Get a Quote</button>
           </div>
           <div className="cell medium-10 text-right">
             <button className="button">Share</button>
@@ -66,8 +65,101 @@ export default class User extends React.PureComponent {
                 <p>
                   <b>Experience</b>
                 </p>
-                <p>Is a somolier at Sway for 5 years.</p>
+                <p>Somolier at Sway for 5 years.</p>
                 <p>Head Chef at Il Bruto for 2 years.</p>
+              </div>
+
+              <div className="padding-1 border-top">
+                <p className="h3">
+                  <b>Reviews</b>
+                </p>
+                <div className="grid-x align-justify">
+                  <div className="cell small-6 align-justify padding-vertical-1 padding-right-1 align-middle">
+                    <span className="text-left h5">Knowledge</span>
+                    <span className="text-right float-right">
+                      <Icon prefix="fi" name="star" />
+                      <Icon prefix="fi" name="star" />
+                      <Icon prefix="fi" name="star" />
+                      <Icon prefix="fi" name="star" />
+                      <Icon prefix="fi" name="star" />
+                    </span>
+                  </div>
+                  <div className="cell small-6 align-justify padding-vertical-1 padding-right-1 align-middle">
+                    <span className="text-left h5">Value</span>
+                    <span className="text-right float-right">
+                      <Icon prefix="fi" name="star" />
+                      <Icon prefix="fi" name="star" />
+                      <Icon prefix="fi" name="star" />
+                      <Icon prefix="fi" name="star" />
+                      <Icon prefix="fi" name="star" />
+                    </span>
+                  </div>
+                  <div className="cell small-6 align-justify padding-vertical-1 padding-right-1 align-middle">
+                    <span className="text-left h5">Friendliness</span>
+                    <span className="text-right float-right">
+                      <Icon prefix="fi" name="star" />
+                      <Icon prefix="fi" name="star" />
+                      <Icon prefix="fi" name="star" />
+                      <Icon prefix="fi" name="star" />
+                      <Icon prefix="fi" name="star" />
+                    </span>
+                  </div>
+                  <div className="cell small-6 align-justify padding-vertical-1 padding-right-1 align-middle">
+                    <span className="text-left h5">Timeliness</span>
+                    <span className="text-right float-right">
+                      <Icon prefix="fi" name="star" />
+                      <Icon prefix="fi" name="star" />
+                      <Icon prefix="fi" name="star" />
+                      <Icon prefix="fi" name="star" />
+                      <Icon prefix="fi" name="star" />
+                    </span>
+                  </div>
+                </div>
+                <div className="grid-y border-bottom padding-1">
+                  <div className="cell medium-12">
+                    <img
+                      className="rounded margin-right-1"
+                      style={{ width: 50 }}
+                      src="https://unsplash.it/202/?random"
+                    />
+                    <span className="h6">Jackson Blacklock</span>
+                  </div>
+                  <div className="padding-vertical-1">
+                    The Police wrote the songs and we play 'em! All the energy,
+                    musicality, and sheer guts as the original, minus the big
+                    egos and even bigger price tag!
+                  </div>
+                </div>
+                <div className="grid-y border-bottom padding-1">
+                  <div className="cell medium-12">
+                    <img
+                      className="rounded margin-right-1"
+                      style={{ width: 50 }}
+                      src="https://unsplash.it/202/?random"
+                    />
+                    <span className="h6">Jackson Blacklock</span>
+                  </div>
+                  <div className="padding-vertical-1">
+                    The Police wrote the songs and we play 'em! All the energy,
+                    musicality, and sheer guts as the original, minus the big
+                    egos and even bigger price tag!
+                  </div>
+                </div>
+                <div className="grid-y border-bottom padding-1">
+                  <div className="cell medium-12">
+                    <img
+                      className="rounded margin-right-1"
+                      style={{ width: 50 }}
+                      src="https://unsplash.it/202/?random"
+                    />
+                    <span className="h6">Jackson Blacklock</span>
+                  </div>
+                  <div className="padding-vertical-1">
+                    The Police wrote the songs and we play 'em! All the energy,
+                    musicality, and sheer guts as the original, minus the big
+                    egos and even bigger price tag!
+                  </div>
+                </div>
               </div>
             </div>
             <div className="cell medium-5 padding-1">
@@ -78,6 +170,11 @@ export default class User extends React.PureComponent {
                 <section className="padding-1 border-top">Menu 1</section>
                 <section className="padding-1 border-top">Menu 2</section>
                 <section className="padding-1 border-top">Menu 3</section>
+                <section className="padding-1 border-top">
+                  <button className="button margin-top-1 text-center expanded">
+                    Get a Quote
+                  </button>
+                </section>
               </section>
             </div>
           </div>

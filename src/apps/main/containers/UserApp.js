@@ -38,7 +38,7 @@ export class UserApp extends Component {
     }
     return (
       <div>
-        <Helmet title="UserApp" />
+        <Helmet title={userId} />
         <User />
       </div>
     );
