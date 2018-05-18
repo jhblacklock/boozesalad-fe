@@ -25,6 +25,7 @@ import PortfolioVideosApp from "./containers/portfolio/PortfolioVideosApp";
 import PortfolioDetailsApp from "./containers/portfolio/PortfolioDetailsApp";
 import PortfolioBookingTermsApp from "./containers/portfolio/PortfolioBookingTermsApp";
 import PortfolioCalendarApp from "./containers/portfolio/PortfolioCalendarApp";
+import SearchApp from "./containers/SearchApp";
 
 export default function routes() {
   return (
@@ -72,6 +73,7 @@ export default function routes() {
           path="calendar"
         />
       </Route>
+      <Route name="search" component={SearchApp} path="search" />
       <Route name="user" component={UserApp} path=":userId" />
       <Route name={ROUTE_NAME_404_NOT_FOUND} path="*" component={NoMatchApp} />
     </Route>

@@ -17,8 +17,16 @@ type Props = {
   children?: ?any,
 };
 
+type State = {
+  query: String,
+};
+
 export default class MasterLayout extends React.PureComponent {
   props: Props;
+  state: State = {
+    query: "",
+  };
+
   render() {
     return (
       <div>
@@ -27,12 +35,15 @@ export default class MasterLayout extends React.PureComponent {
           <TopBarTitle>
             <Link to="/">Taste Buddha</Link>
           </TopBarTitle>
-          <input
-            className="input-group-field"
-            style={{ maxWidth: 300 }}
-            type="text"
-            placeholder="Whiskey, Mezcal, Beer, Wine Tastings..."
-          />
+          <form onSubmit={e => this.submitHandler(e)}>
+            <input
+              onChange={(e: SyntheticEvent) => this.onChangeHandler(e)}
+              className="input-group-field"
+              style={{ maxWidth: 300 }}
+              type="text"
+              placeholder="Whiskey, Mezcal, Beer, Wine Tastings..."
+            />
+          </form>
           <TopBarRight>
             <Menu>
               <MenuItem>
@@ -51,4 +62,14 @@ export default class MasterLayout extends React.PureComponent {
       </div>
     );
   }
+
+  onChangeHandler = (e: SyntheticEvent) => {
+    const target: window.HTMLSelectElement = e.target;
+    this.setState({ query: target.value });
+  };
+
+  submitHandler = (e: SyntheticEvent) => {
+    e.preventDefault();
+    this.props.router.push(`/search?q=${this.state.query}`);
+  };
 }

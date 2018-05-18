@@ -36,7 +36,7 @@ export default class SignUp extends React.PureComponent {
             {this.state.currentSection === 2 && (
               <section className="grid-x grid-margin-x">
                 <center>
-                  <h2>What type of service do you provider?</h2>
+                  <h2>What type of service do you provide?</h2>
                   <p>
                     The category you choose determines where you appear in
                     search results and will characterize your service to
