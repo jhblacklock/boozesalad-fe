@@ -20,6 +20,7 @@ import PortfolioStartApp from "./containers/portfolio/PortfolioStartApp";
 import PortfolioBasicInfoApp from "./containers/portfolio/PortfolioBasicInfoApp";
 import PortfolioCategoriesApp from "./containers/portfolio/PortfolioCategoriesApp";
 import PortfolioMenusApp from "./containers/portfolio/PortfolioMenusApp";
+import PortfolioMenusEditApp from "./containers/portfolio/PortfolioMenusEditApp";
 import PortfolioPhotosApp from "./containers/portfolio/PortfolioPhotosApp";
 import PortfolioVideosApp from "./containers/portfolio/PortfolioVideosApp";
 import PortfolioDetailsApp from "./containers/portfolio/PortfolioDetailsApp";
@@ -69,6 +70,11 @@ export default function routes() {
           path="booking-terms"
         />
         <Route name="menus" component={PortfolioMenusApp} path="menus" />
+        <Route
+          name="menusEdit"
+          component={PortfolioMenusEditApp}
+          path="menus/edit"
+        />
         <Route
           name="calendar"
           component={PortfolioCalendarApp}

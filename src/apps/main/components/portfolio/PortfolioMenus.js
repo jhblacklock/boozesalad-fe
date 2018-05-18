@@ -27,7 +27,10 @@ export default class PortfolioMenus extends React.PureComponent {
                 <b className="cell auto">
                   <Icon prefix="fi" name="check" /> Menus
                 </b>
-                <Link to="#" className="cell medium-3 text-right">
+                <Link
+                  to="/portfolio/menus/edit"
+                  className="cell medium-3 text-right"
+                >
                   Add
                 </Link>
               </div>
