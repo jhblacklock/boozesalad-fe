@@ -25,6 +25,8 @@ import PortfolioVideosApp from "./containers/portfolio/PortfolioVideosApp";
 import PortfolioDetailsApp from "./containers/portfolio/PortfolioDetailsApp";
 import PortfolioBookingTermsApp from "./containers/portfolio/PortfolioBookingTermsApp";
 import PortfolioCalendarApp from "./containers/portfolio/PortfolioCalendarApp";
+import CategoryApp from "./containers/CategoryApp";
+import CategoryWithLocationApp from "./containers/CategoryWithLocationApp";
 import SearchApp from "./containers/SearchApp";
 
 export default function routes() {
@@ -74,6 +76,12 @@ export default function routes() {
         />
       </Route>
       <Route name="search" component={SearchApp} path="search" />
+      <Route name="category" component={CategoryApp} path="c/:categoryId" />
+      <Route
+        name="categoryLocation"
+        component={CategoryWithLocationApp}
+        path="c/:categoryId/:state/:city"
+      />
       <Route name="user" component={UserApp} path=":userId" />
       <Route name={ROUTE_NAME_404_NOT_FOUND} path="*" component={NoMatchApp} />
     </Route>

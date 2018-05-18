@@ -1,6 +1,5 @@
 /* @flow */
 import React from "react";
-import { Link } from "react-router";
 import { Icon } from "react-foundation";
 
 export default class User extends React.PureComponent {

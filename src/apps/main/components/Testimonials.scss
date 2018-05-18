@@ -1,0 +1,24 @@
+@import "~foundation-sites/scss/_global.scss";
+
+.featured-testimonials-section {
+  padding: 2rem 1rem;
+  .featured-testimonials-container {
+    .orbit-previous {
+      color: $black;
+      left: -1rem;
+    }
+    .orbit-next {
+      color: $black;
+      right: -1rem;
+    }
+}
+  .testimonial {
+    display: flex;
+    align-items: center;
+    margin: 2rem 1rem;
+  }
+  .profile-pic {
+    max-width: 100px;
+    border-radius: 50%;
+  }
+}
