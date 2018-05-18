@@ -1,7 +1,7 @@
 /* @flow */
 import React from "react";
 import "./Featured.scss";
-import CategoryCard from "./CategoryCard";
+import UserCard from "./UserCard";
 
 type Props = {
   title: String,
@@ -28,7 +28,7 @@ export default class Featured extends React.PureComponent {
           "Rob Huntleye",
           "Justin Spencere",
         ].map(cat => {
-          return <CategoryCard category={cat} key={cat} />;
+          return <UserCard category={cat} key={cat} />;
         })}
       </div>
     );

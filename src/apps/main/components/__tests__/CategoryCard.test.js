@@ -1,11 +1,11 @@
 import React from "react";
 import { shallow } from "enzyme";
 
-import CategoryCard from "apps/main/components/CategoryCard";
+import UserCard from "apps/main/components/UserCard";
 
-describe("apps/main/components/CategoryCard", () => {
+describe("apps/main/components/UserCard", () => {
   it("renders without an issue", () => {
-    const subject = <CategoryCard />;
+    const subject = <UserCard />;
     const wrapper = shallow(subject);
     expect(wrapper).toBeDefined();
   });

@@ -1,6 +1,6 @@
 /* @flow */
 import React from "react";
-import CategoryCard from "./CategoryCard";
+import UserCard from "./UserCard";
 
 export default class Search extends React.PureComponent {
   render() {
@@ -34,7 +34,7 @@ export default class Search extends React.PureComponent {
               "Rob Huntleye",
               "Justin Spencere",
               ].map(cat => {
-                return <CategoryCard category={cat} key={cat} />;
+                return <UserCard category={cat} key={cat} />;
               })}
           </div>
 
