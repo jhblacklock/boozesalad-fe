@@ -1,6 +1,7 @@
 /* @flow */
 import React from "react";
 import Featured from "./Featured";
+import About from "./About";
 
 export default class CategoryWithLocation extends React.PureComponent {
   render() {
@@ -46,6 +47,7 @@ export default class CategoryWithLocation extends React.PureComponent {
         </div>
         <div className="grid-container padding-1">
           <Featured title={"Whiskey Enthusiasts / Austin, TX"} />
+          <About />
         </div>
       </div>
     );

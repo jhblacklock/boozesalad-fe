@@ -7,7 +7,7 @@ type Props = {
   title: String,
 };
 
-export default class Featureds extends React.PureComponent {
+export default class Featured extends React.PureComponent {
   static defaultProps = {
     title: "Spotlight",
   };
