@@ -22,7 +22,7 @@ export default class Home extends React.PureComponent {
               >
                 <span>
                   <img src="https://images.pexels.com/photos/163704/bike-old-wheel-two-wheeled-vehicle-163704.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb" />
-                  <span className="image-hover-wrapper-banner h5">
+                  <span className="h5">
                     <b>{cat} Tastings</b>
                   </span>
                   <div className="text-uppercase">

@@ -46,7 +46,10 @@ export default class CategoryWithLocation extends React.PureComponent {
           </div>
         </div>
         <div className="grid-container padding-1">
-          <Featured title={"Whiskey Enthusiasts / Austin, TX"} />
+          <Featured
+            title={"Whiskey Enthusiasts / Austin, TX"}
+            showPagination={true}
+          />
           <About />
         </div>
       </div>

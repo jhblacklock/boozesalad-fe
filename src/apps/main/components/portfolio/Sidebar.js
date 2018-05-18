@@ -7,7 +7,7 @@ export default class Sidebar extends React.PureComponent {
   render() {
     return (
       <div>
-        <UserCard />
+        <UserCard name="William" />
         <ul className="vertical menu">
           <li>
             <Link to="/portfolio/start">Start</Link>

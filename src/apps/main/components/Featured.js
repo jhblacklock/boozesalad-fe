@@ -2,14 +2,17 @@
 import React from "react";
 import "./Featured.scss";
 import UserCard from "./UserCard";
+import Pagination from "./Pagination";
 
 type Props = {
-  title: String,
+  title: string,
+  showPagination: boolean,
 };
 
 export default class Featured extends React.PureComponent {
   static defaultProps = {
     title: "Spotlight",
+    showPagination: false,
   };
   props: Props;
   render() {
@@ -26,10 +29,19 @@ export default class Featured extends React.PureComponent {
           "Jackson Blacklocke ",
           "William Blacklocke",
           "Rob Huntleye",
-          "Justin Spencere",
-        ].map(cat => {
-          return <UserCard category={cat} key={cat} />;
+          "Justin Spenceer",
+        ].map(name => {
+          return <UserCard name={name} key={name} />;
         })}
+        <center className="width-100">
+          {this.props.showPagination ? (
+            <Pagination />
+          ) : (
+            <a href="#" className="button margin-auto">
+              View More
+            </a>
+          )}
+        </center>
       </div>
     );
   }
