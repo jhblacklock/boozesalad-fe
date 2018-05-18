@@ -12,7 +12,7 @@ export default class UserCard extends React.PureComponent {
   render() {
     const { name } = this.props;
     return (
-      <Link to="william" className="cell medium-3 margin-bottom-2" key={name}>
+      <Link to="/william" className="cell medium-3 margin-bottom-2" key={name}>
         <span>
           <img src="https://images.pexels.com/photos/163704/bike-old-wheel-two-wheeled-vehicle-163704.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb" />
           <span className="h5">
