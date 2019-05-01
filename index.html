@@ -59,7 +59,7 @@
                 <input type="text" name="ZIPCODE" id="zipcode" class="form-control form-control-lg" placeholder="Enter your zip...">
               </div>
               <div class="col-12 col-md-5">
-                <button type="button" id="button" class="btn btn-block btn-lg btn-primary" onClick="if( $('#zipcode').val() ) { ga('send', 'pageview', '/funnel_G1/step1.html'); $('#row-1').fadeOut(250, function() { $('#row-2').fadeIn(); })};">Start Now!</button>
+                <button type="button" id="button" class="btn btn-block btn-lg btn-primary" onClick="if( $('#zipcode').val() ) { gtag('config', 'UA-139164449-1', { 'page_title' : 'step1', 'page_path': '/funnel_G1/step1.html'}); $('#row-1').fadeOut(250, function() { $('#row-2').fadeIn(); })};">Start Now!</button>
               </div>
             </div>
             <div class="form-row" id="row-2" style="display:none">
@@ -67,7 +67,7 @@
                 <input type="email" name="EMAIL" id="email" class="form-control form-control-lg" placeholder="Enter your email...">
               </div>
               <div class="col-12 col-md-5">
-                <button type="submit" id="submit" class="btn btn-block btn-lg btn-primary mt-0" onClick="if($('#email').val()) { ga('send', 'pageview', '/funnel_G1/step2.html'); $('#mce-responses').show(); };">This is it!</button>
+                <button type="submit" id="submit" class="btn btn-block btn-lg btn-primary mt-0" onClick="if($('#email').val()) { gtag('config', 'UA-139164449-1', { 'page_title' : 'step2', 'page_path': '/funnel_G1/step2.html'}); $('#mce-responses').show(); };">This is it!</button>
               </div>
               <div id="mce-responses" class="col-12 clear" style="display:none; background: rgba(0,0,0,.4);padding: 1rem;font-size: 16px;margin-top: 10px;">
             		<div class="response" id="mce-error-response" style="display:none"></div>
