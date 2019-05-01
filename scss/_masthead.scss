@@ -5,6 +5,7 @@ header.masthead {
   @include background-cover;
   padding-top: 8rem;
   padding-bottom: 8rem;
+  min-height: 630px;
   .overlay {
     position: absolute;
     background-color: $gray-900;
@@ -18,8 +19,6 @@ header.masthead {
     font-size: 2rem;
   }
   @media (min-width: 768px) {
-    padding-top: 12rem;
-    padding-bottom: 12rem;
     h1 {
       font-size: 3rem;
     }

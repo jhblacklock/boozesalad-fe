@@ -54,17 +54,27 @@
         </div>
         <div class="col-md-12 col-lg-8 col-xl-7 mx-auto">
           <form action="https://gmail.us20.list-manage.com/subscribe/post?u=b650b7eb3ac2486610b34c270&amp;id=74d46fb2c2" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-            <div class="form-row">
+            <div class="form-row" id="row-1">
               <div class="col-12 col-md-7 mb-2 mb-md-0">
-                <input type="email" name="EMAIL" class="form-control form-control-lg" placeholder="Enter your email...">
+                <input type="text" name="ZIPCODE" id="zipcode" class="form-control form-control-lg" placeholder="Enter your zip...">
               </div>
               <div class="col-12 col-md-5">
-                <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_b650b7eb3ac2486610b34c270_74d46fb2c2" tabindex="-1" value=""></div>
-                <button type="submit" class="btn btn-block btn-lg btn-primary">Start Now!</button>
+                <button type="button" id="button" class="btn btn-block btn-lg btn-primary" onClick="if( $('#zipcode').val() ) { ga('send', 'pageview', '/funnel_G1/step1.html'); $('#row-1').fadeOut(250, function() { $('#row-2').fadeIn(); })};">Start Now!</button>
               </div>
-              <div id="mce-responses" class="col-12 clear">
+            </div>
+            <div class="form-row" id="row-2" style="display:none">
+              <div class="col-12 col-md-7 mb-2 mb-md-0">
+                <input type="email" name="EMAIL" id="email" class="form-control form-control-lg" placeholder="Enter your email...">
+              </div>
+              <div class="col-12 col-md-5">
+                <button type="submit" id="submit" class="btn btn-block btn-lg btn-primary mt-0" onClick="if($('#email').val()) { ga('send', 'pageview', '/funnel_G1/step2.html'); $('#mce-responses').show(); };">This is it!</button>
+              </div>
+              <div id="mce-responses" class="col-12 clear" style="display:none; background: rgba(0,0,0,.4);padding: 1rem;font-size: 16px;margin-top: 10px;">
             		<div class="response" id="mce-error-response" style="display:none"></div>
             		<div class="response" id="mce-success-response" style="display:none"></div>
+                <div class="response">
+                  We don't yet have the service in your area! But, we will very soon. Please reach out to us personally if you have any questions or would like to join our beta test group. <a href="mailto: tastebuddha.app@gmail.com">tastebuddha.app@gmail.com</a>
+                </div>
             	</div>
             </div>
           </form>
@@ -80,19 +90,19 @@
         <div class="col-lg-4">
           <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
             <div class="features-icons-icon d-flex">
-              <i class="fas fa-glass-whiskey m-auto text-primary"></i>
+              <i class="fas fa-wine-glass-alt m-auto text-primary"></i>
             </div>
-            <h3>Whisky Tasting</h3>
-            <p class="lead mb-0">Learn your tastes. Be it whiskey, mezcal, rum, absynthe, or any booze of your choice. We will pair you with an expert!</p>
+            <h3>Wine and Beer Tastings</h3>
+            <p class="lead mb-0">Interested in connecting with a sommalier? Learn about local or exotic flavors and blends from a true professional.</p>
           </div>
         </div>
         <div class="col-lg-4">
           <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
             <div class="features-icons-icon d-flex">
-              <i class="fas fa-wine-glass-alt m-auto text-primary"></i>
+              <i class="fas fa-glass-whiskey m-auto text-primary"></i>
             </div>
-            <h3>Wine and Beer Tastings</h3>
-            <p class="lead mb-0">Interested in connecting with a sommalier? Learn about local or exotic flavors and blends from a true professional.</p>
+            <h3>Whisky Tasting</h3>
+            <p class="lead mb-0">Learn your tastes. Be it whiskey, mezcal, rum, absynthe, or any booze of your choice. We will pair you with an expert!</p>
           </div>
         </div>
         <div class="col-lg-4">
@@ -205,7 +215,7 @@
             <li class="list-inline-item">
               <a href="#">Contact</a>
             </li> -->
-            <li class="list-inline-item">&sdot;</li>
+            <!-- <li class="list-inline-item">&sdot;</li> -->
             <li class="list-inline-item">
               <a href="/terms.html" target="_blank">Terms of Use</a>
             </li>
