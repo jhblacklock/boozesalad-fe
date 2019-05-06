@@ -1,0 +1,6 @@
+
+# Welcome Robots!
+# Also see: humans.txt
+
+User-agent: *
+Allow: /

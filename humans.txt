@@ -1,0 +1,20 @@
+
+/* The humans responsible */
+/* humanstxt.org */
+
+/* TEAM */
+	Co-founder: Jackson Blacklock
+	Co-founder: William Blacklock
+
+/* SITE */
+	Language: English
+	Frontend: HTML5, CSS3 (SASS), JS (jQuery, React)
+	Backend: Heroku, Redis, Rails
+	Tools: Git, Sketch, Caffeine
+
+   _____         _        ______           _     _ _
+  |_   _|       | |       | ___ \         | |   | | |
+    | | __ _ ___| |_ ___  | |_/ /_   _  __| | __| | |__   __ _
+    | |/ _` / __| __/ _ \ | ___ \ | | |/ _` |/ _` | '_ \ / _` |
+    | | (_| \__ \ ||  __/ | |_/ / |_| | (_| | (_| | | | | (_| |
+    \_/\__,_|___/\__\___| \____/ \__,_|\__,_|\__,_|_| |_|\__,_|
