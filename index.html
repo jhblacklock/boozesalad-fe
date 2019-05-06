@@ -62,7 +62,21 @@
                 <button type="button" id="button" class="btn btn-block btn-lg btn-primary" onClick="if( $('#zipcode').val() ) { gtag('config', 'UA-139164449-1', { 'page_title' : 'step1', 'page_path': '/funnel_G1/step1.html'}); $('#row-1').fadeOut(250, function() { $('#row-2').fadeIn(); })};">Start Now!</button>
               </div>
             </div>
-            <div class="form-row" id="row-2" style="display:none">
+            <div class="form-row text-left" id="row-2" style="display:none">
+              <div class="col-12 mb-2">
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="TYPE" value="Enthusiast" id="r1" checked>
+                  <label class="form-check-label lead" for="r1">
+                    <b>Enthusiast: </b>Are you planning an event and want to hire and expert?
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="TYPE" id="r2" value="Expert">
+                  <label class="form-check-label lead" for="r2">
+                    <b>Expert: </b>Are you looking to get some extra cash for your craft knowledge?</p>
+                  </label>
+                </div>
+              </div>
               <div class="col-12 col-md-7 mb-2 mb-md-0">
                 <input type="email" name="EMAIL" id="email" class="form-control form-control-lg" placeholder="Enter your email...">
               </div>
